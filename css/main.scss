@@ -1,0 +1,27 @@
+@import './css/_header.scss';
+@import './css/_navbar.scss';
+
+.about {
+  // display: flex;
+  // justify-cont ent: center;
+  // margin-top: 125px;
+}
+nav {
+  width:100%;
+  ul {
+    display:flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: black;
+    margin-top: 0;
+    a {
+      text-decoration: none;
+      li {
+        color: white;
+        list-style-type: none;
+        padding: 35px;
+        margin-top: 0px;
+      }
+    }
+  }
+}
