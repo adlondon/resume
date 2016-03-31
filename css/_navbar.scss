@@ -1,0 +1,19 @@
+nav {
+  width:100%;
+  z-index: 100000;
+  ul {
+    display:flex;
+    justify-content: space-around;
+    background-color: $black;
+    margin-top: 0;
+    a {
+      text-decoration: none;
+      li {
+        color: $white;
+        list-style-type: none;
+        padding: 35px;
+        margin-top: 0px;
+      }
+    }
+  }
+}

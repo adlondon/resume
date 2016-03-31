@@ -1,27 +1,22 @@
-@import './css/_header.scss';
-@import './css/_navbar.scss';
+//https://coolors.co/app/2274a5-e7dfc6-e9f1f7-131b23-816c61
 
-.about {
-  // display: flex;
-  // justify-cont ent: center;
-  // margin-top: 125px;
+$black: #131B23;
+$blue: #2274A5;
+$white: #E9F1F7;
+$tan: #C6AC8F;
+$brown: #5E503F;
+
+@import 'header';
+@import 'navbar';
+@import 'about';
+@import 'resume';
+
+body {
+  color: $brown;
+  background-color: $white;
 }
-nav {
-  width:100%;
-  ul {
-    display:flex;
-    width: 100%;
-    justify-content: space-around;
-    background-color: black;
-    margin-top: 0;
-    a {
-      text-decoration: none;
-      li {
-        color: white;
-        list-style-type: none;
-        padding: 35px;
-        margin-top: 0px;
-      }
-    }
-  }
+
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
