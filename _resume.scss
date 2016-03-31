@@ -6,8 +6,8 @@
   .resume-headings {
     margin: 0 50%;
   }
-  h3 {
-    border: 1px solid $black;
+  h1 {
+    border: 5px solid $black;
     margin: 0;
     padding: 10px;
   }
@@ -15,58 +15,57 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     .resume-col {
       display:flex;
       flex-direction: column;
       width:40%;
-      .job-left, .job-right {
-        // color: $brown;
+      padding: 3%;
+      .exp {
         height: 200px;
         position: relative;
         border: 3px solid $blue;
         border-radius: 2px;
         margin: 10%;
         padding: 5%;
+        .arrow-right {
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-top: 30px solid transparent;
+          border-bottom: 30px solid transparent;
+          border-left: 30px solid $white;
+          left: 99.6%;
+          top: 37%;
+        }
+        .arrow-right-border {
+          @extend .arrow-right;
+          border-left: 30px solid $blue;
+          left: 100.8%;
+          z-index: -1;
+          top: 37%;
+        }
+        .arrow-left {
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-top: 30px solid transparent;
+          border-bottom: 30px solid transparent;
+          border-right: 30px solid $white;
+          right: 99.6%;
+          top: 37%;
+        }
+        .arrow-left-border {
+          @extend .arrow-left;
+          border-right: 30px solid $blue;
+          right: 100.8%;
+          z-index: -1;
+          top: 37%;
+        }
       }
     }
-    .left {
-      border-right: 5px solid $black;
+    .right-col {
+      padding-top: 200px;
+      border-left: 5px solid $black;
     }
   }
 }
-
-.arrow-right {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
-    border-left: 30px solid $white;
-    left: 99.6%;
-    top: 36%;
-  }
-.arrow-right-border {
-  @extend .arrow-right;
-  border-left: 30px solid $blue;
-  left: 100.8%;
-  z-index: -1;
-  top: 36%;
-  }
-.arrow-left {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
-    border-right: 30px solid $white;
-    right: 99.6%;
-    top: 36%;
-  }
-.arrow-left-border {
-  @extend .arrow-left;
-  border-right: 30px solid $blue;
-  right: 100.8%;
-  z-index: -1;
-  top: 36%;
-  }

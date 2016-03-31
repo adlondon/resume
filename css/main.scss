@@ -10,10 +10,12 @@ $brown: #5E503F;
 @import 'navbar';
 @import 'about';
 @import 'resume';
+@import 'portfolio';
 
 body {
   color: $brown;
   background-color: $white;
+  font-family: Raleway, sans-serif;
 }
 
 .container {
