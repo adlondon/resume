@@ -5,13 +5,16 @@
     <title>Andrew London's Resume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,800,600,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <!-- <link rel="node_modules/bootstrap/dist/css/bootstrap.css"> -->
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <!-- Home Page -->
     <header>
       <div class="hero about-anchor">
-        <h1 class="tagline">ANDREW LONDON</h1>
+        <h1 class="tagline"><span>ANDREW</span> LONDON</h1>
         <h3 class="tagline">WEB DEVELOPER</h3>
         <a href="#about"><button type="button" name="button">LEARN MORE</button></a>
       </div>
@@ -141,36 +144,90 @@
       <section class="portfolio">
         <h1>PORTFOLIO</h1>
         <h5>These are recent projects that I have worked on during my time with The Iron Yard</h5>
-        <div class="slider">
-          <div class="project">
-            <h5>Final Project</h5>
-            <figure>
-              <img src="http://www.fillmurray.com/800/400" alt="" />
-              <figcaption>A mobile food truck tracking application that allows user to search for food trucks in their area. Built using Ionic.</figcaption>
-            </figure>
+          <!-- <div class="slider">
+            <div class="project">
+              <h5>Final Project</h5>
+              <figure>
+                <img src="http://www.fillmurray.com/800/400" alt="" />
+                <figcaption>A mobile food truck tracking application that allows user to search for food trucks in their area. Built using Ionic.</figcaption>
+              </figure>
+            </div>
+            <div class="project">
+              <h5>Jeopardy Game</h5>
+              <figure>
+                <img src="http://www.fillmurray.com/800/400" alt="" />
+                <figcaption>A Jeopardy game using the jservice api and built with Angular.</figcaption>
+              </figure>
+            </div>
+            <div class="project">
+              <h5>Ninja Turtle Game</h5>
+              <figure>
+                <img src="http://www.fillmurray.com/800/400" alt="" />
+                <figcaption>A Ninja Turle themed game built with Vanilla Javascript.</figcaption>
+              </figure>
+            </div>
+            <div class="project">
+              <h5>Skateboarding Site</h5>
+              <figure>
+                <img src="http://www.fillmurray.com/800/400" alt="" />
+                <figcaption>A responsive skateboarding website based off of a given wireframe. Built with HTML and CSS.</figcaption>
+              </figure>
+            </div>
+          </div> -->
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="http://www.fillmurray.com/610/381" alt="Chania">
+                <div class="carousel-caption">
+                  <h3>Chania</h3>
+                  <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <img src="http://www.fillmurray.com/610/381" alt="Chania">
+                <div class="carousel-caption">
+                  <h3>Chania</h3>
+                  <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <img src="http://www.fillmurray.com/610/381" alt="Flower">
+                <div class="carousel-caption">
+                  <h3>Flowers</h3>
+                  <p>Beatiful flowers in Kolymbari, Crete.</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <img src="http://www.fillmurray.com/610/381" alt="Flower">
+                <div class="carousel-caption">
+                  <h3>Flowers</h3>
+                  <p>Beatiful flowers in Kolymbari, Crete.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-          <div class="project">
-            <h5>Jeopardy Game</h5>
-            <figure>
-              <img src="http://www.fillmurray.com/800/400" alt="" />
-              <figcaption>A Jeopardy game using the jservice api and built with Angular.</figcaption>
-            </figure>
-          </div>
-          <div class="project">
-            <h5>Ninja Turtle Game</h5>
-            <figure>
-              <img src="http://www.fillmurray.com/800/400" alt="" />
-              <figcaption>A Ninja Turle themed game built with Vanilla Javascript.</figcaption>
-            </figure>
-          </div>
-          <div class="project">
-            <h5>Skateboarding Site</h5>
-            <figure>
-              <img src="http://www.fillmurray.com/800/400" alt="" />
-              <figcaption>A responsive skateboarding website based off of a given wireframe. Built with HTML and CSS.</figcaption>
-            </figure>
-          </div>
-        </div>
       </section>
       <!-- Contact Page -->
       <footer>
@@ -225,9 +282,13 @@
 
 
 <script src="node_modules/jquery/dist/jquery.js" type="text/javascript"></script>
+<script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js" charset="utf-8"></script>
 <script src="node_modules/jquery-sticky/jquery.sticky.js" charset="utf-8"></script>
 <script src="node_modules/jquery.localscroll/jquery.localScroll.js" type="text/javascript"></script>
 <script src="node_modules/jquery.scrollto/jquery.scrollTo.js" type="text/javascript"></script>
+<!-- <script src="node_modules/bootstrap/dist/js/bootstrap.js" charset="utf-8"></script> -->
+<!-- <script src="node_modules/bootstrap/js/carousel.js" charset="utf-8"></script> -->
 <script src="main.js" charset="utf-8"></script>
   </body>
 </html>
