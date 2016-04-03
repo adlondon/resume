@@ -8,13 +8,18 @@ nav {
     margin-top: 0;
     a {
       text-decoration: none;
-      li {
-        color: $white;
-        list-style-type: none;
-        width: 100px;
-        padding: 25px;
-        margin-top: 0px;
+      color: $white;
+      list-style-type: none;
+      width: 100px;
+      padding: 25px;
+      margin-top: 0px;
+      transition: all .3s ease-in-out;
+      &:hover {
+        color: $blue;
       }
+      // li {
+      //
+      // }
     }
   }
 }
